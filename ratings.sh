@@ -7,8 +7,8 @@ rm -rf /app
 mkdir -p /app
 cd /app
 unzip /tmp/ratings.zip
-mysql -h mysql-dev.rdevopsb89.online -u root -pRoboShop@1 < db/schema.sql
-mysql -h mysql-dev.rdevopsb89.online -u root -pRoboShop@1 < db/app-user.sql
+mysql -h mysql.shashidevops.online -u root -pRoboShop@1 < db/schema.sql
+mysql -h mysql.shashidevops.online -u root -pRoboShop@1 < db/app-user.sql
 
 useradd -r -s /bin/false appuser
 pip3 install -r /app/requirements.txt cryptography
