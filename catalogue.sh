@@ -6,9 +6,9 @@ rm -rf /app
 mkdir -p /app
 cd /app
 unzip /tmp/catalogue.zip
-mysql -h mysql-dev.rdevopsb89.online -u root -pRoboShop@1 < db/schema.sql
-mysql -h mysql-dev.rdevopsb89.online -u root -pRoboShop@1 < db/app-user.sql
-mysql -h mysql-dev.rdevopsb89.online -u root -pRoboShop@1 catalogue < db/master-data.sql
+mysql -h mysql.shashidevops.online -u root -pRoboShop@1 < db/schema.sql
+mysql -h mysql.shashidevops.online -u root -pRoboShop@1 < db/app-user.sql
+mysql -h mysql.shashidevops.online -u root -pRoboShop@1 catalogue < db/master-data.sql
 
 useradd -r -s /bin/false appuser
 cd /app
